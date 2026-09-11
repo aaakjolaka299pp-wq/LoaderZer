@@ -6,6 +6,7 @@ local BASE = "https://raw.githubusercontent.com/aaakjolaka299pp-wq/ScriptZerLua/
 
 local games = {
     [820014558] = "stealanimeegg.luau.txt",
+    [256494703] = "jumpforanimals.luau.txt",
 }
 
 if identifyexecutor then
