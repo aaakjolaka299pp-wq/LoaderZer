@@ -8,6 +8,7 @@ local games = {
     [820014558] = "stealanimeegg.luau.txt",
     [256494703] = "jumpforanimals.luau.txt",
     [33017480] = "animedice.luau.txt",
+    [65744331] = "rollcases.txt",
 }
 
 if identifyexecutor then
