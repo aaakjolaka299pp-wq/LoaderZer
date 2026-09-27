@@ -1,1 +1,33 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
 
+local BASE = "https://raw.githubusercontent.com/aaakjolaka299pp-wq/ScriptZerLua/main/"
+
+local games = {
+    [719390069] = "cloneverityballs.luau",
+}
+
+local file = games[game.CreatorId]
+
+if not file then
+    warn("[Zer] Unsupported game.")
+    return
+end
+
+local ok, source = pcall(function()
+    return game:HttpGet(BASE .. file)
+end)
+
+if not ok then
+    warn("[Zer] Failed to download script: " .. tostring(source))
+    return
+end
+
+local executeOk, executeError = pcall(function()
+    loadstring(source)()
+end)
+
+if not executeOk then
+    warn("[Zer] Failed to execute script: " .. tostring(executeError))
+end
