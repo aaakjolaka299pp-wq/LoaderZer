@@ -6,7 +6,7 @@ local BASE = "https://raw.githubusercontent.com/aaakjolaka299pp-wq/ScriptZerLua/
 
 local games = {
     [719390069] = "cloneverityballs.luau",
-    [434582823] = "hirepostalkingfaggot.luau"
+    [434582823] = "hirepostalkingfaggot.luau",
     [659716909] = "mergeminiarmy.luau"
 }
 
